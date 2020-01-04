@@ -32,6 +32,7 @@
 | 29 | lunarcalendarwidget | 农历控件 |
 | 30 | videowidget | 通用视频控件 |
 | 31 | screenwidget | 屏幕截图控件 |
+| 32 | echartgauge | echart仪表盘含交互支持webkit及webengine |
 
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/lightbutton.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/movewidget.gif)
@@ -64,3 +65,4 @@
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/lunarcalendarwidget.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/videowidget.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/screenwidget.gif)
+![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/echartgauge.gif)
