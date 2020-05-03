@@ -38,8 +38,8 @@
 | 35 | vlcdemo | 视频流播放vlc内核 |
 
 ### 学习群
-**Qt交流大会群 853086607(雨田哥)**
-**Qt技术交流群 46679801(3000人群)**
+1. **Qt交流大会群 853086607(雨田哥)**
+2. **Qt技术交流群 46679801(3000人群)**
 
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/lightbutton.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/snap/movewidget.gif)
