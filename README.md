@@ -62,6 +62,8 @@
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/bgdemo.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/dbpage.png)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/pngtool.gif)
+![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/savelog.png)
+![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/saveruntime.jpg)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/colorwidget.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/maskwidget.gif)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/battery.gif)
