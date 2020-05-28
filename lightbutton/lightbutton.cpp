@@ -5,7 +5,7 @@
 #include "qevent.h"
 #include "qtimer.h"
 #include "qdebug.h"
-
+#include <QPainterPath>
 LightButton::LightButton(QWidget *parent) : QWidget(parent)
 {
     text = "";
