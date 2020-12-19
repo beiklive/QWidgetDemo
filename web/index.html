@@ -12,13 +12,14 @@
     <title>Qt自定义控件大全web演示(QQ:517216493 WX: feiyangqingyun)</title>
     <style>
       /* Make the html body cover the entire (visual) viewport with no scroll bars. */
-      html, body { padding: 0; margin: 0; overflow:hidden; height: 100vh }
+      html, body { padding: 0; margin: 0; overflow:hidden; height: 100vh ;}
       /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
       canvas { border: 0px none; background-color: white; height:100%; width:100%;  }
       /* The contenteditable property is set to true for the canvas in order to support
          clipboard events. Hide the resulting focus frame and set the cursor back to
          the default cursor. */
       canvas { outline: 0px solid transparent; caret-color: transparent; cursor:default }
+      .ime-disabled{ime-mode:disabled;}
     </style>
   </head>
   <body onload="init()">
