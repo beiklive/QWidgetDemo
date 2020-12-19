@@ -233,16 +233,6 @@ signals:
     void btnClicked(const QString &objName);
 
 public slots:
-    //设置视频宽度
-    void setVideoWidth(int videoWidth);
-    //设置视频高度
-    void setVideoHeight(int videoHeight);
-
-    //设置缓存图片宽度
-    void setBufferWidth(int bufferWidth);
-    //设置缓存图片高度
-    void setBufferHeight(int bufferHeight);
-
     //获取长度
     uint getLength();
     //获取当前播放位置

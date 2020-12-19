@@ -583,26 +583,6 @@ void VideoWidget::btnClicked()
     emit btnClicked(btn->objectName());
 }
 
-void VideoWidget::setVideoWidth(int videoWidth)
-{
-
-}
-
-void VideoWidget::setVideoHeight(int videoHeight)
-{
-
-}
-
-void VideoWidget::setBufferWidth(int bufferWidth)
-{
-
-}
-
-void VideoWidget::setBufferHeight(int bufferHeight)
-{
-
-}
-
 uint VideoWidget::getLength()
 {
     return 0;
