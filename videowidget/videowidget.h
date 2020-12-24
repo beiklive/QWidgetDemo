@@ -23,13 +23,7 @@
 class QTimer;
 
 #ifdef quc
-#if (QT_VERSION < QT_VERSION_CHECK(5,7,0))
-#include <QtDesigner/QDesignerExportWidget>
-#else
-#include <QtUiPlugin/QDesignerExportWidget>
-#endif
-
-class QDESIGNER_WIDGET_EXPORT VideoWidget : public QWidget
+class Q_DECL_EXPORT VideoWidget : public QWidget
 #else
 class VideoWidget : public QWidget
 #endif
@@ -222,6 +216,11 @@ signals:
     void receivePlayError();
     //播放结束
     void receivePlayFinsh();
+
+    //总时长
+    void fileLengthReceive(qint64 length);
+    //当前播放时长
+    void filePositionReceive(qint64 position);
 
     //收到图片信号
     void receiveImage(const QImage &image);

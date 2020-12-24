@@ -81,7 +81,7 @@ void VideoWidget::initFlowPanel()
     //用布局顶住,左侧弹簧
     QHBoxLayout *layout = new QHBoxLayout;
     layout->setSpacing(2);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
     layout->addStretch();
     flowPanel->setLayout(layout);
 
@@ -100,7 +100,7 @@ void VideoWidget::initFlowPanel()
     icons << QApplication::style()->standardIcon(QStyle::SP_DialogCancelButton);
 #else
     QList<QChar> chars;
-    chars << 0xe68d << 0xe672 << 0xe674 << 0xea36 << 0xe74c;
+    chars << QChar(0xe68d) << QChar(0xe672) << QChar(0xe674) << QChar(0xea36) << QChar(0xe74c);
 
     //判断图形字体是否存在,不存在则加入
     QFont iconFont;
@@ -277,7 +277,7 @@ void VideoWidget::drawBg(QPainter *painter)
     //背景图片为空则绘制文字,否则绘制背景图片
     if (bgImage.isNull()) {
         painter->setFont(this->font());
-        painter->setPen(palette().foreground().color());
+        painter->setPen(palette().windowText().color());
         painter->drawText(rect(), Qt::AlignCenter, bgText);
     } else {
         //居中绘制

@@ -56,7 +56,7 @@ void VideoPanel::initControl()
 {
     gridLayout = new QGridLayout;
     gridLayout->setSpacing(1);
-    gridLayout->setMargin(0);
+    gridLayout->setContentsMargins(0, 0, 0, 0);
     gridLayout->setObjectName("gridLayout");
     this->setLayout(gridLayout);
 }

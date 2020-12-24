@@ -13,13 +13,7 @@ class QLabel;
 class QGridLayout;
 
 #ifdef quc
-#if (QT_VERSION < QT_VERSION_CHECK(5,7,0))
-#include <QtDesigner/QDesignerExportWidget>
-#else
-#include <QtUiPlugin/QDesignerExportWidget>
-#endif
-
-class QDESIGNER_WIDGET_EXPORT VideoPanel : public QWidget
+class Q_DECL_EXPORT VideoPanel : public QWidget
 #else
 class VideoPanel : public QWidget
 #endif
