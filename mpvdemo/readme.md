@@ -2,7 +2,7 @@
 
 对应各个版本的dll文件下载地址：https://pan.baidu.com/s/13LDRu6mXC6gaADtrGprNVA 提取码: ujm7
 
-收费增强版本：[https://qtchina.blog.csdn.net/article/details/103946067](https://qtchina.blog.csdn.net/article/details/103946067)
+收费增强版本：[https://qtchina.blog.csdn.net/article/details/107972067](https://qtchina.blog.csdn.net/article/details/107972067)
 
 1. 作品大全：[https://qtchina.blog.csdn.net/article/details/97565652](https://qtchina.blog.csdn.net/article/details/97565652)
 2. 国内站点：[https://gitee.com/feiyangqingyun](https://gitee.com/feiyangqingyun)

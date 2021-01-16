@@ -1,7 +1,8 @@
 ﻿编译完成以后记得将dll文件复制到可执行文件同一目录。
+
 对应各个版本的dll文件下载地址：https://pan.baidu.com/s/13LDRu6mXC6gaADtrGprNVA 提取码: ujm7
 
-收费增强版本：[https://qtchina.blog.csdn.net/article/details/103946067](https://qtchina.blog.csdn.net/article/details/103946067)
+收费增强版本：[https://qtchina.blog.csdn.net/article/details/103946731](https://qtchina.blog.csdn.net/article/details/103946731)
 
 1. 作品大全：[https://qtchina.blog.csdn.net/article/details/97565652](https://qtchina.blog.csdn.net/article/details/97565652)
 2. 国内站点：[https://gitee.com/feiyangqingyun](https://gitee.com/feiyangqingyun)
