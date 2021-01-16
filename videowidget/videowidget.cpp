@@ -828,6 +828,26 @@ void VideoWidget::setOSD2Position(const VideoWidget::OSDPosition &osdPosition)
     this->osd2Position = osdPosition;
 }
 
+void VideoWidget::setOSD1Format(quint8 osdFormat)
+{
+    setOSD1Format((VideoWidget::OSDFormat)osdFormat);
+}
+
+void VideoWidget::setOSD2Format(quint8 osdFormat)
+{
+    setOSD2Format((VideoWidget::OSDFormat)osdFormat);
+}
+
+void VideoWidget::setOSD1Position(quint8 osdPosition)
+{
+    setOSD1Position((VideoWidget::OSDPosition)osdPosition);
+}
+
+void VideoWidget::setOSD2Position(quint8 osdPosition)
+{
+    setOSD2Position((VideoWidget::OSDPosition)osdPosition);
+}
+
 void VideoWidget::setFaceBorder(int faceBorder)
 {
     this->faceBorder = faceBorder;

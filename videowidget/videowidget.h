@@ -337,6 +337,12 @@ public slots:
     //设置标签2位置
     void setOSD2Position(const OSDPosition &osdPosition);
 
+    //设置值自动进行枚举转换
+    void setOSD1Format(quint8 osdFormat);
+    void setOSD2Format(quint8 osdFormat);
+    void setOSD1Position(quint8 osdPosition);
+    void setOSD2Position(quint8 osdPosition);
+
     //设置人脸框粗细
     void setFaceBorder(int faceBorder);
     //设置人脸框颜色
