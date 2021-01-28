@@ -756,7 +756,7 @@ public:
     //获取网页所有源代码
     static QString getHtml(const QString &url);
     //获取本机公网IP地址
-    static QString getNetIP(const QString &webCode);
+    static QString getNetIP(const QString &html);
     //获取本机IP
     static QString getLocalIP();
     //获取本机IP地址集合
