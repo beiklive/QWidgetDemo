@@ -189,7 +189,7 @@ function QtLoader(config)
             removeChildren(container);
             var loadingText = document.createElement("text");
             loadingText.className = "QtLoading"
-            loadingText.innerHTML = '<p><center> ${loadingState}...</center><p>';
+            loadingText.innerHTML = '<p><center> ${loadingState} ...</center><p>';
             return loadingText;
         };
 
@@ -274,7 +274,7 @@ function QtLoader(config)
     function fetchCompileWasm(filePath) {
         return fetchResource(filePath).then(function(response) {
             if (typeof WebAssembly.compileStreaming !== "undefined") {
-                self.loaderSubState = "下载/编译";
+                self.loaderSubState = "第一步: 下载 / 第二步: 编译";
                 setStatus("Loading");
                 return WebAssembly.compileStreaming(response).catch(function(error) {
                     // compileStreaming may/will fail if the server does not set the correct
