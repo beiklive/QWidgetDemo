@@ -2186,6 +2186,42 @@ void QUIHelper::initFile(const QString &sourceName, const QString &targetName)
     }
 }
 
+bool QUIHelper::checkIniFile(const QString &iniFile)
+{
+    //如果配置文件大小为0,则以初始值继续运行,并生成配置文件
+    QFile file(iniFile);
+    if (file.size() == 0) {
+        return false;
+    }
+
+    //如果配置文件不完整,则以初始值继续运行,并生成配置文件
+    if (file.open(QFile::ReadOnly)) {
+        bool ok = true;
+        while (!file.atEnd()) {
+            QString line = file.readLine();
+            line = line.replace("\r", "");
+            line = line.replace("\n", "");
+            QStringList list = line.split("=");
+
+            if (list.count() == 2) {
+                if (list.at(1) == "") {
+                    qDebug() << TIMEMS << "ini node no value" << list.at(0);
+                    ok = false;
+                    break;
+                }
+            }
+        }
+
+        if (!ok) {
+            return false;
+        }
+    } else {
+        return false;
+    }
+
+    return true;
+}
+
 void QUIHelper::setIconBtn(QAbstractButton *btn, const QString &png, const QChar &str)
 {
     int size = 16;

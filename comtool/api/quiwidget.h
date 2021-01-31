@@ -601,6 +601,9 @@ public:
     //初始化文件,不存在则拷贝
     static void initFile(const QString &sourceName, const QString &targetName);
 
+    //检查ini配置文件
+    static bool checkIniFile(const QString &iniFile);
+
     //设置图标到按钮
     static void setIconBtn(QAbstractButton *btn, const QString &png, const QChar &str);
 
