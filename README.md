@@ -98,4 +98,4 @@
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/designer.png)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/miniblink.jpg)
 ![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/base64.png)
-![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/smoothcurve.png)
+![avatar](https://gitee.com/feiyangqingyun/QWidgetDemo/raw/master/0snap/smoothcurve.gif)
