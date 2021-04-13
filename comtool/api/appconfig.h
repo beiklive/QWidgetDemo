@@ -1,9 +1,9 @@
-﻿#ifndef APP_H
-#define APP_H
+﻿#ifndef APPCONFIG_H
+#define APPCONFIG_H
 
 #include "head.h"
 
-class App
+class AppConfig
 {
 public:
     static QString ConfigFile;          //配置文件路径
@@ -45,4 +45,4 @@ public:
     static void readDeviceData();
 };
 
-#endif // APP_H
+#endif // APPCONFIG_H
