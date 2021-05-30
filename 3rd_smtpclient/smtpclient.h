@@ -92,7 +92,7 @@ protected:
 	int responseCode;
 
 	class ResponseTimeoutException {};
-	void waitForResponse() throw (ResponseTimeoutException);
+    void waitForResponse();
 	void sendMessage(const QString &text);
 
 signals:

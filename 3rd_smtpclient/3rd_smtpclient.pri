@@ -11,8 +11,7 @@ HEADERS += \
     $$PWD/mimetext.h \
     $$PWD/quotedprintable.h \
     $$PWD/smtpclient.h \
-    $$PWD/smtpmime.h \
-    $$PWD/sendemailthread.h
+    $$PWD/smtpmime.h
            
 SOURCES += \
     $$PWD/emailaddress.cpp \
@@ -26,5 +25,4 @@ SOURCES += \
     $$PWD/mimepart.cpp \
     $$PWD/mimetext.cpp \
     $$PWD/quotedprintable.cpp \
-    $$PWD/smtpclient.cpp \
-    $$PWD/sendemailthread.cpp
+    $$PWD/smtpclient.cpp

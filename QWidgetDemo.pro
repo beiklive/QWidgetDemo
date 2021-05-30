@@ -24,7 +24,6 @@ SUBDIRS += maskwidget       #遮罩层窗体
 SUBDIRS += battery          #电池电量控件
 SUBDIRS += lineeditnext     #文本框回车焦点下移
 SUBDIRS += zhtopy           #汉字转拼音
-SUBDIRS += qwtdemo          #qwt的源码版本，无需插件，直接源码集成到你的项目即可
 SUBDIRS += devicebutton     #设备按钮地图效果
 SUBDIRS += mouseline        #鼠标定位十字线
 SUBDIRS += emailtool        #邮件发送工具
@@ -46,5 +45,12 @@ SUBDIRS += miniblink        #miniblink示例
 
 #如果你电脑对应的Qt版本有webkit或者webengine组件可以自行打开
 #SUBDIRS += echartgauge      #echart仪表盘含交互支持webkit及webengine
-#designer项目只支持Qt4,如果是Qt4可以自行打开
+
+lessThan(QT_MAJOR_VERSION, 4) {
 #SUBDIRS += designer         #QtDesigner4源码
+}
+
+#qwt项目需要等官方适配了qwt组件才能适配
+lessThan(QT_MAJOR_VERSION, 6) {
+SUBDIRS += qwtdemo          #qwt的源码版本，无需插件，直接源码集成到你的项目即可
+}

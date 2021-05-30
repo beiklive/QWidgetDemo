@@ -1,5 +1,5 @@
 ﻿#include "sendemailthread.h"
-#include "sendemail/smtpmime.h"
+#include "smtpmime.h"
 
 #pragma execution_character_set("utf-8")
 #define TIMEMS qPrintable(QTime::currentTime().toString("hh:mm:ss zzz"))

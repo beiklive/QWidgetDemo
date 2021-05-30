@@ -222,7 +222,7 @@ bool SmtpClient::login(const QString &user, const QString &password, AuthMethod 
 	try {
 		if (method == AuthPlain) {
 			// Sending command: AUTH PLAIN base64('\0' + username + '\0' + password)
-			sendMessage("AUTH PLAIN " + QByteArray().append((char) 0).append(user).append((char) 0).append(password).toBase64());
+            sendMessage("AUTH PLAIN " + QByteArray().append((char) 0).append(user.toUtf8()).append((char) 0).append(password.toUtf8()).toBase64());
 
 			// Wait for the server's response
 			waitForResponse();
@@ -245,7 +245,7 @@ bool SmtpClient::login(const QString &user, const QString &password, AuthMethod 
 			}
 
 			// Send the username in base64
-			sendMessage(QByteArray().append(user).toBase64());
+            sendMessage(QByteArray().append(user.toUtf8()).toBase64());
 
 			// Wait for 334
 			waitForResponse();
@@ -256,7 +256,7 @@ bool SmtpClient::login(const QString &user, const QString &password, AuthMethod 
 			}
 
 			// Send the password in base64
-			sendMessage(QByteArray().append(password).toBase64());
+            sendMessage(QByteArray().append(password.toUtf8()).toBase64());
 
 			// Wait for the server's responce
 			waitForResponse();
@@ -354,7 +354,7 @@ void SmtpClient::quit()
 	sendMessage("QUIT");
 }
 
-void SmtpClient::waitForResponse() throw (ResponseTimeoutException)
+void SmtpClient::waitForResponse()
 {
 	do {
 		if (!socket->waitForReadyRead(responseTimeout)) {

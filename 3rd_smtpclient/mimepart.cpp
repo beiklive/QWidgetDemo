@@ -142,7 +142,7 @@ void MimePart::prepare()
 			break;
 	}
 
-	if (cId != 0) {
+    if (cId.toInt() != 0) {
 		mimeString.append("Content-ID: <").append(cId).append(">\r\n");
 	}
 
