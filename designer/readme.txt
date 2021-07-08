@@ -1,3 +1,1 @@
-双击运行designer.pro文件，编译运行即可。
-PS：只支持Qt5以下的版本。
-qdesigner.cpp最后一行代码改成了启动程序后自动加载qui.ui
+**特别提示：只支持Qt4**
