@@ -37,7 +37,7 @@ SUBDIRS += imageswitch      #图片开关控件
 SUBDIRS += netserver        #网络中转服务器
 SUBDIRS += base64           #图片文字base64互换
 SUBDIRS += smoothcurve      #平滑曲线
-SUBDIRS += frameless      	#无边框方案支持win、linux、mac等
+SUBDIRS += frameless      	#跨平台无边框窗体
 
 #限定windows系统加载下面的项目
 win32 {

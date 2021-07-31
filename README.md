@@ -49,7 +49,7 @@
 | 41 | miniblink | miniblink示例 |
 | 42 | base64 | 图片文字base64互换 |
 | 43 | smoothcurve | 平滑曲线 |
-| 44 | frameless | 地表最强最简单无边框方案 |
+| 44 | frameless | 跨平台无边框窗体 |
 
 ### 二、学习群
 1. **Qt交流大会群 853086607(雨田哥)**
