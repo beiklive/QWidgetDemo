@@ -300,7 +300,11 @@ void QUIHelper::setFramelessForm(QWidget *widgetMain, bool tool, bool top, bool 
     widgetMain->setProperty("canMove", true);
 
     //根据设定逐个追加属性
+#ifdef __arm__
     widgetMain->setWindowFlags(Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
+#else
+    widgetMain->setWindowFlags(Qt::FramelessWindowHint);
+#endif
     if (tool) {
         widgetMain->setWindowFlags(widgetMain->windowFlags() | Qt::Tool);
     }
@@ -323,8 +327,12 @@ void QUIHelper::setFramelessForm(QWidget *widgetMain, QWidget *widgetTitle,
     widgetMain->setProperty("form", true);
     widgetMain->setProperty("canMove", true);
 
-    //根据设定逐个追加属性 去掉了 Qt::X11BypassWindowManagerHint
+    //根据设定逐个追加属性
+#ifdef __arm__
+    widgetMain->setWindowFlags(Qt::FramelessWindowHint | Qt::X11BypassWindowManagerHint);
+#else
     widgetMain->setWindowFlags(Qt::FramelessWindowHint);
+#endif
     if (tool) {
         widgetMain->setWindowFlags(widgetMain->windowFlags() | Qt::Tool);
     }
