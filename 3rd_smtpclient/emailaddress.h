@@ -8,7 +8,7 @@ class EmailAddress : public QObject
 	Q_OBJECT
 public:
 
-	EmailAddress();
+    explicit EmailAddress();
 	EmailAddress(const QString &address, const QString &name = "");
 
 	~EmailAddress();
@@ -16,8 +16,8 @@ public:
 	void setName(const QString &name);
 	void setAddress(const QString &address);
 
-	const QString &getName() const;
-	const QString &getAddress() const;
+    const QString getName() const;
+    const QString getAddress() const;
 
 private:
 	QString name;
