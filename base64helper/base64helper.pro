@@ -2,18 +2,18 @@ QT += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 greaterThan(QT_MAJOR_VERSION, 5): QT += core5compat
 
-TARGET      = base64
+TARGET      = base64helper
 TEMPLATE    = app
 DESTDIR     = $$PWD/../bin
 CONFIG      += warn_off
 
 SOURCES     += main.cpp
 
-SOURCES     += frmbase64.cpp
-SOURCES     += base64.cpp
+SOURCES     += frmbase64helper.cpp
+SOURCES     += base64helper.cpp
 
-HEADERS     += frmbase64.h
-HEADERS     += base64.h
+HEADERS     += frmbase64helper.h
+HEADERS     += base64helper.h
 
-FORMS       += frmbase64.ui
+FORMS       += frmbase64helper.ui
 

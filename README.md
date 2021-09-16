@@ -1,4 +1,4 @@
-﻿#### 一、目录说明
+﻿﻿#### 一、目录说明
 1. **可以选择打开QWidgetDemo.pro一次性编译所有的，也可以进入到目录下打开pro进行编译。**
 2. **如果发现有些子项目没有加载请打开QWidgetDemo.pro仔细看里面的注释。**
 3. **编译好的可执行文件在源码同级目录下的bin目录。**
@@ -17,7 +17,7 @@
 | 9 | styledemo | 高仿PS黑色+扁平白色+淡蓝色风格主题 |
 | 10 | navbutton | 导航按钮控件 |
 | 11 | videopanel | 视频监控画面分割demo |
-| 12 | framelesswidget | 通用无边框拖动拉伸类 |
+| 12 | framelesswidget | 跨平台无边框窗体 |
 | 13 | ipaddress | IP地址输入控件 |
 | 14 | bgdemo | 无边框背景透明窗体 |
 | 15 | dbpage | 通用数据库翻页查询 |
@@ -49,7 +49,6 @@
 | 41 | miniblink | miniblink示例 |
 | 42 | base64 | 图片文字base64互换 |
 | 43 | smoothcurve | 平滑曲线 |
-| 44 | frameless | 跨平台无边框窗体 |
 
 ### 二、学习群
 1. **Qt交流大会群 853086607(雨田哥)**

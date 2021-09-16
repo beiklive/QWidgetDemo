@@ -1,23 +1,23 @@
 ﻿#pragma execution_character_set("utf-8")
 
-#include "frmbase64.h"
-#include "ui_frmbase64.h"
-#include "base64.h"
+#include "frmbase64helper.h"
+#include "ui_frmbase64helper.h"
+#include "base64helper.h"
 #include "qfiledialog.h"
 #include "qelapsedtimer.h"
 #include "qdebug.h"
 
-frmBase64::frmBase64(QWidget *parent) : QWidget(parent), ui(new Ui::frmBase64)
+frmBase64Helper::frmBase64Helper(QWidget *parent) : QWidget(parent), ui(new Ui::frmBase64Helper)
 {
     ui->setupUi(this);
 }
 
-frmBase64::~frmBase64()
+frmBase64Helper::~frmBase64Helper()
 {
     delete ui;
 }
 
-void frmBase64::on_btnOpen_clicked()
+void frmBase64Helper::on_btnOpen_clicked()
 {
     QString fileName = QFileDialog::getOpenFileName(this, "选择文件", "", "图片(*.png *.bmp *.jpg)");
     if (!fileName.isEmpty()) {
@@ -28,7 +28,7 @@ void frmBase64::on_btnOpen_clicked()
     }
 }
 
-void frmBase64::on_btnClear_clicked()
+void frmBase64Helper::on_btnClear_clicked()
 {
     ui->txtFile->clear();
     ui->txtText->clear();
@@ -36,7 +36,7 @@ void frmBase64::on_btnClear_clicked()
     ui->labImage->clear();
 }
 
-void frmBase64::on_btnImageToBase64_clicked()
+void frmBase64Helper::on_btnImageToBase64_clicked()
 {
     //计时
     QElapsedTimer time;
@@ -44,7 +44,7 @@ void frmBase64::on_btnImageToBase64_clicked()
 
     QString fileName = ui->txtFile->text().trimmed();
     if (!fileName.isEmpty()) {
-        ui->txtBase64->setText(Base64::imageToBase64(QImage(fileName)));
+        ui->txtBase64->setText(Base64Helper::imageToBase64(QImage(fileName)));
     }
 
     //统计用时
@@ -57,7 +57,7 @@ void frmBase64::on_btnImageToBase64_clicked()
     qDebug() << QString("用时 %1 毫秒").arg(strTime);
 }
 
-void frmBase64::on_btnBase64ToImage_clicked()
+void frmBase64Helper::on_btnBase64ToImage_clicked()
 {
     //计时
     QElapsedTimer time;
@@ -65,7 +65,7 @@ void frmBase64::on_btnBase64ToImage_clicked()
 
     QString text = ui->txtBase64->toPlainText().trimmed();
     if (!text.isEmpty()) {
-        QPixmap pix = QPixmap::fromImage(Base64::base64ToImage(text));
+        QPixmap pix = QPixmap::fromImage(Base64Helper::base64ToImage(text));
         pix = pix.scaled(ui->labImage->size() - QSize(4, 4), Qt::KeepAspectRatio);
         ui->labImage->setPixmap(pix);
     }
@@ -80,18 +80,18 @@ void frmBase64::on_btnBase64ToImage_clicked()
     qDebug() << QString("用时 %1 毫秒").arg(strTime);
 }
 
-void frmBase64::on_btnTextToBase64_clicked()
+void frmBase64Helper::on_btnTextToBase64_clicked()
 {
     QString text = ui->txtText->text().trimmed();
     if (!text.isEmpty()) {
-        ui->txtBase64->setText(Base64::textToBase64(text));
+        ui->txtBase64->setText(Base64Helper::textToBase64(text));
     }
 }
 
-void frmBase64::on_btnBase64ToText_clicked()
+void frmBase64Helper::on_btnBase64ToText_clicked()
 {
     QString text = ui->txtBase64->toPlainText().trimmed();
     if (!text.isEmpty()) {
-        ui->txtText->setText(Base64::base64ToText(text));
+        ui->txtText->setText(Base64Helper::base64ToText(text));
     }
 }

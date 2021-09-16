@@ -1,6 +1,6 @@
 ﻿#pragma execution_character_set("utf-8")
 
-#include "frmbase64.h"
+#include "frmbase64helper.h"
 #include <QApplication>
 #include <QTextCodec>
 
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForLocale(codec);
 #endif
 
-    frmBase64 w;
+    frmBase64Helper w;
     w.setWindowTitle("图片文字base64编码互换");
     w.show();
 

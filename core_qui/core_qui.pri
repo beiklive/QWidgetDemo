@@ -21,7 +21,7 @@ CONFIG += resources_big
 include ($$PWD/h3.pri)
 
 HEADERS += \
-    $$PWD/base64.h \
+    $$PWD/base64helper.h \
     $$PWD/iconhelper.h \
     $$PWD/quiconfig.h \
     $$PWD/quidateselect.h \
@@ -34,7 +34,7 @@ HEADERS += \
     $$PWD/quiwidget.h
 
 SOURCES += \
-    $$PWD/base64.cpp \
+    $$PWD/base64helper.cpp \
     $$PWD/iconhelper.cpp \
     $$PWD/quiconfig.cpp \
     $$PWD/quidateselect.cpp \

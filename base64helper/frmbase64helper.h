@@ -1,22 +1,22 @@
-﻿#ifndef FRMBASE64_H
-#define FRMBASE64_H
+﻿#ifndef FRMBASE64HELPER_H
+#define FRMBASE64HELPER_H
 
 #include <QWidget>
 
 namespace Ui {
-class frmBase64;
+class frmBase64Helper;
 }
 
-class frmBase64 : public QWidget
+class frmBase64Helper : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit frmBase64(QWidget *parent = 0);
-    ~frmBase64();
+    explicit frmBase64Helper(QWidget *parent = 0);
+    ~frmBase64Helper();
 
 private:
-    Ui::frmBase64 *ui;
+    Ui::frmBase64Helper *ui;
 
 private slots:
     void on_btnOpen_clicked();
@@ -27,4 +27,4 @@ private slots:
     void on_btnBase64ToText_clicked();
 };
 
-#endif // FRMBASE64_H
+#endif // FRMBASE64HELPER_H

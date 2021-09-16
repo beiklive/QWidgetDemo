@@ -20,12 +20,12 @@ void EmailAddress::setAddress(const QString &address)
 	this->address = address;
 }
 
-const QString EmailAddress::getName() const
+const QString &EmailAddress::getName() const
 {
 	return name;
 }
 
-const QString EmailAddress::getAddress() const
+const QString &EmailAddress::getAddress() const
 {
-    return address;
+	return address;
 }
